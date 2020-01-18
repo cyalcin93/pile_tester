@@ -1,0 +1,14 @@
+name: "withVersioning"
+type: "project_type"
+setup_file: "SetupProject.kt"
+suites:
+- name: "123"
+  type: "rest_suite_type"
+  setup_file: "SetupSuite.kt"
+  order: 0
+  description: "asghas"
+  tests: []
+version: 2
+global_variables:
+  exampleGlobalVar: "yolo"
+  exampleGlobalIntVar: 1337

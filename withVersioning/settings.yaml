@@ -1,0 +1,8 @@
+name: "withVersioning"
+type: "project_type"
+setup_file: "SetupProject.kt"
+suites: []
+version: 1
+global_variables:
+  exampleGlobalVar: "yolo"
+  exampleGlobalIntVar: 1337

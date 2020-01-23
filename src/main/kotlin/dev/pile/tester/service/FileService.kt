@@ -20,26 +20,16 @@ fun createFile(filePath: String): Boolean {
     return true
 }
 
-private fun setPermission(file: File, permission: FilePermission) {
+fun setFilePermission(file: File, permission: FilePermission) {
     when (permission) {
-        FilePermission.READ_ONLY -> {
-            file.setReadOnly()
+        FilePermission.READ_ONLY -> file.setReadOnly()
+        FilePermission.ALL -> {
+            file.setReadable(true)
+            file.setWritable(true)
+            file.setExecutable(true)
         }
-        FilePermission.ALL -> {}
     }
 }
-
-fun getAllSettingsFiles() = File(".").
-        walkBottomUp().
-        filter { it.name.endsWith(".yaml") }.
-        filter { it.name.startsWith("settings.v") }
-
-fun checkIfProjectSettingsExists() = File(".").
-        walkBottomUp(). //
-        filter { it.name.endsWith(".yaml") }.
-        filter { it.name.startsWith("settings.v") }.
-        count().
-        let { if (it > 0) return true else false }
 
 fun checkIfFileExists(filePath: String) = File(filePath).exists()
 

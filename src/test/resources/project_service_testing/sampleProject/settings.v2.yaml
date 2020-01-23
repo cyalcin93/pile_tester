@@ -1,0 +1,9 @@
+name: "ohboy"
+type: "project_type"
+setup_file: "SetupProject.kt"
+suites: []
+version: 2
+global_variables:
+  exampleGlobalVar2: "huehue"
+  exampleGlobalVar: "yolo"
+  exampleGlobalIntVar: 1337

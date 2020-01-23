@@ -1,6 +1,0 @@
-name: "123"
-type: "rest_suite_type"
-setup_file: "SetupSuite.kt"
-order: 0
-description: "asghas"
-tests: []

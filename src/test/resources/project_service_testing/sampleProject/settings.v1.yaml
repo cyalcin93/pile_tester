@@ -1,8 +1,8 @@
-name: "withVersioning"
+name: "ohboy"
 type: "project_type"
 setup_file: "SetupProject.kt"
 suites: []
 version: 1
 global_variables:
-  exampleGlobalVar: "yolo"
+  exampleGlobalVar: "yolo1337"
   exampleGlobalIntVar: 1337

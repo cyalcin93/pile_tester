@@ -2,7 +2,9 @@ package dev.pile.tester.service
 
 import dev.pile.tester.dto.*
 import dev.pile.tester.util.YAMLParse
+import java.io.File
 
+var projectRoot = "."  // fixme get this from somewhere
 
 fun createProject(projectName: String) {
     setupProjectRootDirectory(projectName)
@@ -11,18 +13,29 @@ fun createProject(projectName: String) {
 }
 
 fun isValidProjectDirectory(): Message? {
-    if(!checkIfProjectSettingsExists()) {
-        return Message(true, "settings.yaml could not be found")
+    if(!checkIfProjectSettingsExists(projectRoot)) {
+        return Message(true, "settings could not be found")
     }
-    val projectSettings = YAMLParse.parseDto("settings.yaml", ProjectSettings::class)
+    val projectSettings = YAMLParse.parseDto("settings.v1.yaml", ProjectSettings::class)
 
     checkIfValidProjectSettings(projectSettings)?.takeIf { it.error }?.apply { return this }
 
     return null
 }
 
+fun getAllSettingsFiles(path: String) = File(path).
+        walk().
+        filter { it.name.endsWith(".yaml") }.
+        filter { it.name.startsWith("settings.v") }
+
+
+fun checkIfProjectSettingsExists(path: String) =
+        getAllSettingsFiles(path).
+        count().
+        let { if (it > 0) return true else false }
+
 fun addSuiteToProject(suite: SuiteSettings) {
-    var projectSettings = getProjectSettings()
+    val projectSettings = getLatestProjectSettings()
     val lastIndex = projectSettings.suites.size
     suite.order = lastIndex
     projectSettings.suites.add(suite)
@@ -32,7 +45,14 @@ fun addSuiteToProject(suite: SuiteSettings) {
             "settings.v${projectSettings.version}.yaml")
 }
 
-private fun getProjectSettings() = YAMLParse.parseDto("settings.yaml", ProjectSettings::class)
+private fun getVersionFromSettingsFileName(file: File): Int = file.nameWithoutExtension.substringAfter("settings.v").toInt()
+
+fun getLatestProjectSettings(): ProjectSettings {
+    val file = getAllSettingsFiles(projectRoot).maxBy { file -> getVersionFromSettingsFileName(file) }
+
+    return YAMLParse.parseDto("$projectRoot/${file?.name}", ProjectSettings::class)
+}
+
 
 private fun setupProjectRootDirectory(projectName: String) {
     createDirectory(projectName)

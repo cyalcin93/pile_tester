@@ -21,7 +21,7 @@ class ProjectServiceTest {
 
     @Test
     fun test_getAllSettingsFiles() {
-        val settingsFiles = getAllSettingsFiles("$directoryPath/sampleProject")
+        val settingsFiles = ProjectService.getAllSettingsFiles("$directoryPath/sampleProject")
         Assertions.assertEquals(3, settingsFiles.count())
 
         Assertions.assertEquals(
@@ -44,16 +44,16 @@ class ProjectServiceTest {
 
     @Test
     fun test_checkIfProjectSettingsExists() {
-        val exists = checkIfProjectSettingsExists("$directoryPath/sampleProject")
+        val exists = ProjectService.checkIfProjectSettingsExists("$directoryPath/sampleProject")
         Assertions.assertTrue(exists)
 
-        val doesNotExist = checkIfProjectSettingsExists("$directoryPath/empty")
+        val doesNotExist = ProjectService.checkIfProjectSettingsExists("$directoryPath/empty")
         Assertions.assertFalse(doesNotExist)
     }
 
     @Test
     fun test_getLatestProjectSettings() {
-        val projectSettings = getLatestProjectSettings()
+        val projectSettings = ProjectService.getLatestProjectSettings()
         Assertions.assertEquals("ohboy", projectSettings.name)
         Assertions.assertEquals(3, projectSettings.version)
         Assertions.assertEquals("yolo", projectSettings.global_variables["exampleGlobalVar"])

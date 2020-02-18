@@ -11,7 +11,6 @@ class FileServiceTest {
     @BeforeAll
     fun setupSuite() {
 
-
     }
 
     @AfterAll
@@ -23,38 +22,38 @@ class FileServiceTest {
 
     @Test
     fun test_checkIfFileExists() {
-        val exists = checkIfFileExists("$directoryPath/findThisFile.txt")
+        val exists = FileService.checkIfFileExists("$directoryPath/findThisFile.txt")
         Assertions.assertTrue(exists)
 
-        val doesNotExist = checkIfFileExists("$directoryPath/cantFindIt.xml")
+        val doesNotExist = FileService.checkIfFileExists("$directoryPath/cantFindIt.xml")
         Assertions.assertFalse(doesNotExist)
     }
 
 
     @Test
     fun test_checkIfDirectoryExists() {
-        val exists = checkIfDirectoryExists("$directoryPath/findThisDirectory")
+        val exists = FileService.checkIfDirectoryExists("$directoryPath/findThisDirectory")
         Assertions.assertTrue(exists)
 
-        val doesNotExist = checkIfDirectoryExists("$directoryPath/cantFindIt")
+        val doesNotExist = FileService.checkIfDirectoryExists("$directoryPath/cantFindIt")
         Assertions.assertFalse(doesNotExist)
     }
 
     @Test
     fun test_createDirectory() {
-        val exists = createDirectory("$directoryPath/findThisDirectory")
+        val exists = FileService.createDirectory("$directoryPath/findThisDirectory")
         Assertions.assertFalse(exists)
 
-        val doesNotExist = createDirectory("$directoryPath/createDirectory")
+        val doesNotExist = FileService.createDirectory("$directoryPath/createDirectory")
         Assertions.assertTrue(doesNotExist)
     }
 
     @Test
     fun test_createFile() {
-        val exists = createFile("$directoryPath/findThisFile.txt")
+        val exists = FileService.createFile("$directoryPath/findThisFile.txt")
         Assertions.assertFalse(exists)
 
-        val doesNotExist = createFile("$directoryPath/createFile.txt")
+        val doesNotExist = FileService.createFile("$directoryPath/createFile.txt")
         Assertions.assertTrue(doesNotExist)
     }
 
@@ -63,12 +62,12 @@ class FileServiceTest {
         val file = File("$directoryPath/permissionFile.txt")
         file.createNewFile()
 
-        setFilePermission(file, FilePermission.READ_ONLY)
+        FileService.setFilePermission(file, FilePermission.READ_ONLY)
         Assertions.assertTrue(file.canRead())
         Assertions.assertFalse(file.canWrite())
         Assertions.assertFalse(file.canExecute())
 
-        setFilePermission(file, FilePermission.ALL)
+        FileService.setFilePermission(file, FilePermission.ALL)
         Assertions.assertTrue(file.canRead())
         Assertions.assertTrue(file.canWrite())
         Assertions.assertTrue(file.canExecute())

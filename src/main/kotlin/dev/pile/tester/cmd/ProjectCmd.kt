@@ -3,10 +3,9 @@ package dev.pile.tester.cmd
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.prompt
-import dev.pile.tester.service.createProject
-import dev.pile.tester.service.isValidProjectDirectory
+import dev.pile.tester.service.ProjectService
 
-class CreateProject : CliktCommand() {
+class CreateProject : CliktCommand(name = "project") {
     val name: String by option(help = "Name")
             .prompt("Project name")
 
@@ -14,7 +13,7 @@ class CreateProject : CliktCommand() {
         echo("Attempting to create project with name $name")
 
         try {
-            createProject(name)
+            ProjectService.createProject(name)
             echo("Project directory for $name was created successfully")
         } catch (e: Exception) {
             echo(e.message)
@@ -38,6 +37,6 @@ class Project : CliktCommand() {
     }
 
     override fun run() {
-        isValidProjectDirectory()?.takeIf { it.error }?.apply { echo(this.content) }
+        ProjectService.isValidProjectDirectory()
     }
 }

@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eedbeaec-4adc-4dff-a8b6-7c55803d9c3a" name="Default Changelist" comment="Fixed some unit testing and some other things">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/dev/pile/tester/service/FileServiceTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/dev/pile/tester/service/ProjectServiceTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/dev/pile/tester/util/YamlParseTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/file_service_testing/findThisFile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/yaml_parse_testing/parseThisFile.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="eedbeaec-4adc-4dff-a8b6-7c55803d9c3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/cmd/ProjectCmd.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/cmd/ProjectCmd.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/cmd/SuiteCmd.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/cmd/SuiteCmd.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/FileService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/FileService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/ProjectService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/ProjectService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/ShadowProjectService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/ShadowProjectService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/SuiteService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/SuiteService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/dev/pile/tester/FileServiceTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/FileServiceKt$checkIfProjectSettingsExists$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/FileServiceKt$checkIfProjectSettingsExists$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/FileServiceKt$getAllSettingsFiles$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/FileServiceKt$getAllSettingsFiles$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/FileServiceKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/FileServiceKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/YAMLService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/pile/tester/service/YAMLService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/dev/pile/tester/service/FileServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/dev/pile/tester/service/FileServiceTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/dev/pile/tester/service/ProjectServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/dev/pile/tester/service/ProjectServiceTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/pile_tester.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/pile_tester.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/CreateProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/CreateProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/CreateSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/CreateSuite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/Project$Build.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/Project$Build.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/Project$Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/Project$Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/Suite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/cmd/Suite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/FileServiceKt$WhenMappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/FileServiceKt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/ProjectServiceKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/ProjectServiceKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withVersioning/123/SetupSuite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/project_service_testing/sampleProject/settings.v1.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withVersioning/123/TeardownSuite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/project_service_testing/sampleProject/settings.v2.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withVersioning/SetupProject.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/project_service_testing/sampleProject/SetupProject.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withVersioning/oh ty/SetupSuite.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/withVersioning/oh ty/TeardownSuite.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/withVersioning/settings.v2.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/withVersioning/settings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/project_service_testing/sampleProject/settings.v3.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withVersioning/src/main/kotlin/pile/tester/withVersioning/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/project_service_testing/sampleProject/src/main/kotlin/pile/tester/ohboy/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/ShadowProjectServiceKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/ShadowProjectServiceKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/SuiteServiceKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/YAMLServiceKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/pile/tester/service/YAMLServiceKt.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +63,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/project_service_testing/sampleProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/yyyo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -105,7 +104,22 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Full project test">
+  <component name="RunManager" selected="Kotlin.new suite">
+    <configuration name="FileServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pile_tester" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.pile.tester.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.pile.tester.service" />
+      <option name="MAIN_CLASS_NAME" value="dev.pile.tester.service.FileServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Full project test" type="JUnit" factoryName="JUnit" singleton="false" temporary="true">
       <extension name="coverage">
         <pattern>
@@ -141,22 +155,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjectServiceTest.test_checkIfProjectSettingsExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pile_tester" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.pile.tester.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.pile.tester.service" />
-      <option name="MAIN_CLASS_NAME" value="dev.pile.tester.service.ProjectServiceTest" />
-      <option name="METHOD_NAME" value="test_checkIfProjectSettingsExists" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProjectServiceTest.test_getLatestProjectSettings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pile_tester" />
       <extension name="coverage">
@@ -188,23 +186,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pile.tester.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="new project" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="pile_tester" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="new project" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="pile.tester.MainKt" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="MAIN_CLASS_NAME" value="dev.pile.tester.MainKt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="project run" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration name="new suite" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="pile_tester" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="createproject" />
+      <option name="PROGRAM_PARAMETERS" value="new suite" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -217,19 +215,19 @@
     <list>
       <item itemvalue="JUnit.Full project test" />
       <item itemvalue="JUnit.YamlParseTest" />
-      <item itemvalue="JUnit.ProjectServiceTest.test_checkIfProjectSettingsExists" />
       <item itemvalue="JUnit.ProjectServiceTest" />
       <item itemvalue="JUnit.ProjectServiceTest.test_getLatestProjectSettings" />
-      <item itemvalue="Kotlin.project run" />
-      <item itemvalue="Kotlin.pile.tester.MainKt" />
+      <item itemvalue="JUnit.FileServiceTest" />
+      <item itemvalue="Kotlin.new project" />
+      <item itemvalue="Kotlin.new suite" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileServiceTest" />
+        <item itemvalue="JUnit.ProjectServiceTest" />
         <item itemvalue="JUnit.Full project test" />
         <item itemvalue="JUnit.YamlParseTest" />
         <item itemvalue="JUnit.ProjectServiceTest.test_getLatestProjectSettings" />
-        <item itemvalue="JUnit.ProjectServiceTest" />
-        <item itemvalue="JUnit.ProjectServiceTest.test_checkIfProjectSettingsExists" />
       </list>
     </recent_temporary>
   </component>
@@ -276,8 +274,20 @@
       <workItem from="1579424264887" duration="1760000" />
       <workItem from="1579583428263" duration="1314000" />
       <workItem from="1579755330629" duration="139000" />
-      <workItem from="1579755482077" duration="213000" />
+      <workItem from="1579755482077" duration="832000" />
+      <workItem from="1580535682507" duration="4668000" />
+      <workItem from="1580705019854" duration="599000" />
+      <workItem from="1581755437156" duration="4040000" />
+      <workItem from="1582000373565" duration="1482000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed some unit testing and some other things">
+      <created>1579755706321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579755706321</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,13 +311,14 @@
     </state>
     <state x="1315" y="597" width="1200" height="1009" key="#Project_Structure/0.36.3840.2124@0.36.3840.2124" timestamp="1575805229988" />
     <state x="1366" y="596" width="2028" height="839" key="#Project_Structure/78.36.3762.2124@78.36.3762.2124" timestamp="1579755558242" />
-    <state x="2270" y="479" width="1306" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579348643074">
+    <state x="2270" y="479" width="1306" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582000922892">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
-    <state x="2270" y="479" width="1306" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/78.36.3762.2124@78.36.3762.2124" timestamp="1579348643074" />
-    <state x="2618" y="749" width="553" height="767" key="#com.intellij.ide.util.MemberChooser" timestamp="1578231908361">
-      <screen x="78" y="36" width="3762" height="2124" />
+    <state x="2270" y="479" width="1306" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/78.36.3762.2124@78.36.3762.2124" timestamp="1582000922892" />
+    <state x="2593" y="749" width="553" height="767" key="#com.intellij.ide.util.MemberChooser" timestamp="1580548045511">
+      <screen x="0" y="36" width="3840" height="2124" />
     </state>
+    <state x="2593" y="749" key="#com.intellij.ide.util.MemberChooser/0.36.3840.2124@0.36.3840.2124" timestamp="1580548045511" />
     <state x="2618" y="749" width="553" height="767" key="#com.intellij.ide.util.MemberChooser/78.36.3762.2124@78.36.3762.2124" timestamp="1578231908361" />
     <state x="2590" y="560" width="655" height="558" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1579348638974">
       <screen x="78" y="36" width="3762" height="2124" />
@@ -333,34 +344,34 @@
       <screen x="0" y="36" width="3840" height="2124" />
     </state>
     <state x="1622" y="986" width="585" height="223" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.36.3840.2124@0.36.3840.2124" timestamp="1575758544093" />
-    <state x="396" y="229" width="3121" height="964" key="CommitChangelistDialog2" timestamp="1579755674084">
+    <state x="396" y="229" width="3121" height="964" key="CommitChangelistDialog2" timestamp="1579755706148">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
-    <state x="396" y="229" width="3121" height="964" key="CommitChangelistDialog2/78.36.3762.2124@78.36.3762.2124" timestamp="1579755674084" />
-    <state x="2624" y="799" width="530" height="605" key="FileChooserDialogImpl" timestamp="1579755545428">
+    <state x="396" y="229" width="3121" height="964" key="CommitChangelistDialog2/78.36.3762.2124@78.36.3762.2124" timestamp="1579755706148" />
+    <state x="2624" y="799" width="530" height="605" key="FileChooserDialogImpl" timestamp="1582000840968">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
-    <state x="2624" y="799" width="530" height="605" key="FileChooserDialogImpl/78.36.3762.2124@78.36.3762.2124" timestamp="1579755545428" />
-    <state width="1842" height="613" key="GridCell.Tab.0.bottom" timestamp="1579755674148">
+    <state x="2624" y="799" width="530" height="605" key="FileChooserDialogImpl/78.36.3762.2124@78.36.3762.2124" timestamp="1582000840968" />
+    <state width="3702" height="613" key="GridCell.Tab.0.bottom" timestamp="1582000844788">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
     <state width="3768" height="600" key="GridCell.Tab.0.bottom/0.36.3840.2124@0.36.3840.2124" timestamp="1575805700004" />
-    <state width="1842" height="613" key="GridCell.Tab.0.bottom/78.36.3762.2124@78.36.3762.2124" timestamp="1579755674148" />
-    <state width="1842" height="613" key="GridCell.Tab.0.center" timestamp="1579755674148">
+    <state width="3702" height="613" key="GridCell.Tab.0.bottom/78.36.3762.2124@78.36.3762.2124" timestamp="1582000844788" />
+    <state width="3702" height="613" key="GridCell.Tab.0.center" timestamp="1582000844788">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
     <state width="3768" height="600" key="GridCell.Tab.0.center/0.36.3840.2124@0.36.3840.2124" timestamp="1575805700003" />
-    <state width="1842" height="613" key="GridCell.Tab.0.center/78.36.3762.2124@78.36.3762.2124" timestamp="1579755674148" />
-    <state width="1842" height="613" key="GridCell.Tab.0.left" timestamp="1579755674148">
+    <state width="3702" height="613" key="GridCell.Tab.0.center/78.36.3762.2124@78.36.3762.2124" timestamp="1582000844788" />
+    <state width="3702" height="613" key="GridCell.Tab.0.left" timestamp="1582000844788">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
     <state width="3768" height="600" key="GridCell.Tab.0.left/0.36.3840.2124@0.36.3840.2124" timestamp="1575805700003" />
-    <state width="1842" height="613" key="GridCell.Tab.0.left/78.36.3762.2124@78.36.3762.2124" timestamp="1579755674148" />
-    <state width="1842" height="613" key="GridCell.Tab.0.right" timestamp="1579755674148">
+    <state width="3702" height="613" key="GridCell.Tab.0.left/78.36.3762.2124@78.36.3762.2124" timestamp="1582000844788" />
+    <state width="3702" height="613" key="GridCell.Tab.0.right" timestamp="1582000844788">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
     <state width="3768" height="600" key="GridCell.Tab.0.right/0.36.3840.2124@0.36.3840.2124" timestamp="1575805700004" />
-    <state width="1842" height="613" key="GridCell.Tab.0.right/78.36.3762.2124@78.36.3762.2124" timestamp="1579755674148" />
+    <state width="3702" height="613" key="GridCell.Tab.0.right/78.36.3762.2124@78.36.3762.2124" timestamp="1582000844788" />
     <state width="2030" height="752" key="GridCell.Tab.1.bottom" timestamp="1579342996293">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
@@ -387,16 +398,20 @@
     </state>
     <state x="1285" y="642" width="1269" height="912" key="SettingsEditor/0.36.3840.2124@0.36.3840.2124" timestamp="1575758483895" />
     <state x="1337" y="642" width="1350" height="1087" key="SettingsEditor/78.36.3762.2124@78.36.3762.2124" timestamp="1575810777584" />
+    <state x="686" y="771" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1579755713413">
+      <screen x="78" y="36" width="3762" height="2124" />
+    </state>
+    <state x="686" y="771" width="1000" height="654" key="Vcs.Push.Dialog.v2/78.36.3762.2124@78.36.3762.2124" timestamp="1579755713413" />
     <state x="2064" y="136" width="1646" height="1924" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1579337674497">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
     <state x="2027" y="136" width="1681" height="1924" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.36.3840.2124@0.36.3840.2124" timestamp="1579238443505" />
     <state x="2064" y="136" width="1646" height="1924" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/78.36.3762.2124@78.36.3762.2124" timestamp="1579337674497" />
-    <state x="1455" y="848" key="com.intellij.ide.util.TipDialog" timestamp="1579755485175">
+    <state x="1455" y="848" key="com.intellij.ide.util.TipDialog" timestamp="1582000375159">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
     <state x="1455" y="848" key="com.intellij.ide.util.TipDialog/0.36.3840.2124@0.36.3840.2124" timestamp="1578975852103" />
-    <state x="1455" y="848" key="com.intellij.ide.util.TipDialog/78.36.3762.2124@78.36.3762.2124" timestamp="1579755485175" />
+    <state x="1455" y="848" key="com.intellij.ide.util.TipDialog/78.36.3762.2124@78.36.3762.2124" timestamp="1582000375159" />
     <state x="2497" y="1000" width="576" height="202" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579425323565">
       <screen x="78" y="36" width="3762" height="2124" />
     </state>
@@ -427,7 +442,7 @@
     <SUITE FILE_PATH="coverage/pile_tester$tester_in_pile_tester.ic" NAME="tester in pile_tester Coverage Results" MODIFIED="1579344303634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>dev.pile.tester.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/pile_tester$Full_project_test.ic" NAME="Full project test Coverage Results" MODIFIED="1579348644602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/pile_tester$Full_project_test.ic" NAME="Full project test Coverage Results" MODIFIED="1581755522866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>dev.pile.tester.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/pile_tester$FileServiceTest__1_.ic" NAME="FileServiceTest (1) Coverage Results" MODIFIED="1579339632127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
